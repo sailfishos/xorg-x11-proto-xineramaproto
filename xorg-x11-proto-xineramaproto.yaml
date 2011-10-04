@@ -1,0 +1,18 @@
+Name: xorg-x11-proto-xineramaproto
+Summary: X.Org X11 Protocol xineramaproto
+Description: | 
+    Xinerama is an X extension that allows clients to query information
+    about multiple physical screens controlled by a single X server that
+    appear as a single screen to core X11 protocol operations.
+Version: 1.2.1
+Release: 0
+Group: Development/System
+License: MIT
+URL: http://www.x.org
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/proto/xineramaproto-%{version}.tar.bz2
+
+Provides: xineramaproto
+Configure: configure
+ConfigOptions:
+    - --libdir=%{_datadir}
